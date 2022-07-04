@@ -12,4 +12,4 @@
 
 7) SELECT COUNT(`id`) as `numbers` FROM `departments`; 
 
-8) SELECT COUNT(`id`) FROM `teachers` WHERE (`phone` IS null); 
+8) SELECT COUNT(`id`) FROM `teachers` WHERE `phone` IS null; 
