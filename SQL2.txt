@@ -1,0 +1,3 @@
+JOIN
+
+1) SELECT students.*, degrees.name FROM students JOIN degrees ON students.degree_id = degrees.id WHERE degrees.name = "Corso di Laurea in Economia"; 
