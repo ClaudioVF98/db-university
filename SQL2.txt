@@ -1,3 +1,5 @@
 JOIN
 
 1) SELECT students.*, degrees.name FROM students JOIN degrees ON students.degree_id = degrees.id WHERE degrees.name = "Corso di Laurea in Economia"; 
+
+2) SELECT teachers.*, departments.name, degrees.name FROM `teachers` JOIN departments JOIN degrees ON departments.id = degrees.department_id WHERE departments.name = "Dipartimento di Neuroscienze"; 
