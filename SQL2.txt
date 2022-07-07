@@ -4,4 +4,26 @@ JOIN
 
 2) SELECT degrees.*, departments.name FROM degrees JOIN departments ON degrees.department_id = departments.id WHERE departments.name = "Dipartimento di Neuroscienze" AND degrees.level = "magistrale"; 
 
-3) SELECT course_teacher.*, teachers.*, courses.* FROM course_teacher JOIN courses ON course_teacher.course_id = courses.id JOIN teachers on course_teacher.teacher_id = teachers.id WHERE teacher_id = 44; 
+3) SELECT course_teacher.*, teachers.*, courses.* FROM course_teacher JOIN courses ON course_teacher.course_id = courses.id JOIN teachers on course_teacher.teacher_id = teachers.id WHERE teacher_id = 44;
+
+4) SELECT degrees.name, degrees.department_id, departments.name FROM `degrees` JOIN degrees ON degrees.id = students.degree_id JOIN departments ON departments.id = degrees.department_id ORDER BY `students`.`name` ASC;
+
+5)
+
+6)
+
+7)
+
+
+
+GROUP BY
+
+1) SELECT COUNT(id) AS number, YEAR(`enrolment_date`) AS years FROM `students` GROUP BY YEAR(`enrolment_date`);
+
+2) SELECT COUNT(id) AS number, `office_address` AS office FROM `teachers` GROUP BY `office_address`;
+
+3) SELECT ROUND(AVG(vote)) as vote, exam_id AS exam_id FROM `exam_student` GROUP BY exam_id;
+
+4) SELECT COUNT(id) AS number, department_id AS departments FROM `degrees` GROUP BY department_id;
+
+
